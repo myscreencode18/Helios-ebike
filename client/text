@@ -1,0 +1,15 @@
+<section id="features" className="py-20">
+  {/* Features content */}
+</section>
+
+<section id="specs" className="py-20">
+  {/* Specs content */}
+</section>
+
+<section id="testimonials" className="py-20">
+  {/* Testimonials content */}
+</section>
+
+<section id="preorder" className="py-20">
+  {/* Pre-order content */}
+</section>
