@@ -154,7 +154,7 @@ const Header = () => {
           <button className="bg-gradient-to-r from-orange-500 to-orange-700 text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:scale-105 transition-transform">
             Pre-Order Now
           </button>
-          <button className="flex items-center gap-2 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+          <button onClick={() => window.open("https://www.youtube.com/watch?v=YOUR_VIDEO_ID", "_blank")} className="flex items-center gap-2 border border-gray-300 px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
             <Play size={18} /> Watch Launch Film
           </button>
         </div>
