@@ -20,7 +20,11 @@ const handleSubmit = async (e) => {
   e.preventDefault();
   setLoading(true);
   try {
-    const response = await axios.post('https://helios-ebike.onrender.com/api/preorders', formData);
+    const response = await axios.post('https://helios-ebike.onrender.com/api/preorders', formData, {
+      headers:{
+        "Content-Type": "application/json"
+      }
+    });
     alert('Pre-order successful! Thank you.');
     setFormData({ name: '', email: '', phone: '', color: '' });
     setIsModalOpen(false);

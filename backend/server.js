@@ -13,11 +13,13 @@ const app = express();
 
 // Middlewares
 app.use(helmet());
-app.use(cors({
-  origin: process.env.CLIENT_URL,   // must exactly match frontend URL
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "*",
+    methods: ["GET", "POST"],   // ✅ explicitly allow karo
+    allowedHeaders: ["Content-Type", "Authorization"], // ✅ ensure headers allowed
+  })
+);
 app.use(express.json());
 if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
