@@ -2,8 +2,9 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import PreOrderList from './admin/PreOrderList';
-import HomePage from './HomePAge';
+
 import AdminAccess from './admin/AdminAccess';
+import HomePage from './HomePage';
 
 const App = () => {
   return (
